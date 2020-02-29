@@ -29,6 +29,21 @@ class TestCase(unittest.TestCase):
         expected = 25 * math.pi
         self.assertEqual(expected, task.calc_area(5))
 
+    def test_first_last(self):
+        test_list1 = []
+        test_list2 = [1]
+        test_list3 = [1, 8]
+        test_list4 = [2, 8, -9]
+
+        # check empty list
+        self.assertEqual(test_list1, task.first_last(test_list1))
+        # check one element list
+        self.assertEqual([1, 1], task.first_last(test_list2))
+        # check two element list
+        self.assertEqual(test_list3, task.first_last(test_list3))
+        # check three element list
+        self.assertEqual([2, -9], task.first_last(test_list4))
+
 
 if __name__ == '__main__':
     unittest.main()
