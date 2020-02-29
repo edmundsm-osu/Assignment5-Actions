@@ -1,5 +1,4 @@
 import math
-import datetime
 
 
 def firstrun():
