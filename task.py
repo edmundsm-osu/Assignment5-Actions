@@ -1,3 +1,2 @@
 def firstrun():
     return "success"
-

@@ -29,7 +29,7 @@ MANIFEST
 
 # pycharm
 */.idea*
-/idea/
+*/.idea/*
 /.idea/*
 
 # PyInstaller
