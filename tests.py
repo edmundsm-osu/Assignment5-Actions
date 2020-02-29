@@ -10,7 +10,7 @@ class TestCase(unittest.TestCase):
 
     def test2(self):
         expected = "failure"
-        self.assertEqual(expected, task.firstrun())
+        self.assertNotEqual(expected, task.firstrun())
 
 
 if __name__ == '__main__':
